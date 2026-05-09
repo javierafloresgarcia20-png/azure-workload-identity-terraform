@@ -59,7 +59,7 @@ resource "azurerm_federated_identity_credential" "github" {
 # =============================================
 resource "azurerm_role_assignment" "github_contributor" {
   scope                = azurerm_resource_group.main.id
-  role_definition_name = "Contributor"        # Change to "Reader" if you want even less access
+  role_definition_name = "Reader"        # Change to "Reader" if you want even less access
   principal_id         = azurerm_user_assigned_identity.github.principal_id
 }
 
