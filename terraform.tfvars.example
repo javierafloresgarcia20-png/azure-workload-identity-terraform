@@ -1,0 +1,3 @@
+location     = "westus2"
+github_org   = "javierafloresgarcia20-png"
+github_repo  = "azure-aks-terraform"
